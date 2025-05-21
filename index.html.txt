@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+	<html lang="en">
+		<head>
+			<meta charset="utf-8"/>
+			<title>Brawl Stars - Project Laser</title>
+			<base href="version/20200825-121253/"/>
+			<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui"/>
+			<meta name="format-detection" content="telephone=no"/>
+			<meta name="apple-mobile-web-app-capable" content="yes"/>
+			<meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+			<meta name="mobile-web-app-capable" content="yes"/>
+			<meta name="description" content=""/>
+			<meta property="og:type" content="game"/>
+			<meta property="og:title" content="Brawl Stars"/>
+			<meta property="og:description" content="Project Laser"/>
+			<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png"/>
+			<link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32"/>
+			<link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16"/>
+			<link rel="stylesheet" href="assets/css/style.css">
+		</head>
+		<body>
+			<div class="container" id="container">
+					<div class="load-indicator"></div>
+				<script>
+					var a=setTimeout,
+					b=document.querySelector(".load-indicator"),
+					c=0;
+					function d() {
+						b&&(b.innerText="┤┘┴└├┌┬┐".substr(c++%8,1),a(d,60))
+					}a(d,500);
+				</script>
+				<div class="rotate-screen">
+					<div class="rotate-icon">
+						<img src="assets/css/rotate.png" loading="lazy" alt="Please rotate your device to play"/>
+					</div>
+				</div>
+				<div class="not-supported-message">
+					<div class="not-supported-message-icon">
+						<img src="assets/css/device-not-supported.png" loading="lazy" alt="Device is not supported"/>
+					</div>
+				</div>
+			</div>
+			<noscript> Enable JavaScript to play this game. </noscript>
+
+			<script src="main.js"></script>
+			<script>
+				window.ga = () => {};
+			</script>
+		</body>
+	</html>
